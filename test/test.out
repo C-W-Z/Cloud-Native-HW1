@@ -1,14 +1,14 @@
 Success
 100001
-Phone model 8|Black color, brand new|1000|2025-03-19 14:00:24|Electronics|user1
+Phone model 8|Black color, brand new|1000|2025-03-19 18:50:06|Electronics|user1
 100002
 Success
 Error - user already existing
 100003
-T-shirt|White color|20|2025-03-19 14:00:29|Sports|user2
+T-shirt|White color|20|2025-03-19 18:50:08|Sports|user2
 Error - category not found
-T-shirt|White color|20|2025-03-19 14:00:29|Sports|user2
-Black shoes|Training shoes|100|2025-03-19 14:00:26|Sports|user1
+T-shirt|White color|20|2025-03-19 18:50:08|Sports|user2
+Black shoes|Training shoes|100|2025-03-19 18:50:07|Sports|user1
 Sports
 Error - listing owner mismatch
 Success
