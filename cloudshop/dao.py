@@ -1,5 +1,5 @@
 import sqlite3
-from models import ReturnType, User, Listing, Category
+from cloudshop.models import ReturnType, User, Listing, Category
 
 class Database:
     def __init__(self, db_path="cloudshop.db"):
@@ -183,7 +183,7 @@ class Database:
 
         return (ReturnType.Success, listings)
 
-    def get_top_category(self, username: str) -> tuple[ReturnType, list[Category]]:
+    def get_top_categories(self, username: str) -> tuple[ReturnType, list[Category]]:
         if self.check_user_exist(username) == ReturnType.Unknown_User:
             return (ReturnType.Unknown_User, [])
 

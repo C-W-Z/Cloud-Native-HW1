@@ -1,5 +1,5 @@
-from models import ReturnType, User, Listing, Category
-from dao import Database
+from cloudshop.models import ReturnType, User, Listing, Category
+from cloudshop.dao import Database
 
 class ServiceAPI:
     def __init__(self, database: Database):
@@ -63,8 +63,8 @@ class ServiceAPI:
         else:
             return "Unknwon Error"
 
-    def get_top_category(self, username: str):
-        res, categories = self.db.get_top_category(username)
+    def get_top_categories(self, username: str):
+        res, categories = self.db.get_top_categories(username)
         if res == ReturnType.Success:
             category_names = []
             for c in categories:

@@ -1,6 +1,6 @@
 import sys
-from dao import Database
-from service import ServiceAPI
+from cloudshop.dao import Database
+from cloudshop.service import ServiceAPI
 import shlex
 # import time
 
@@ -29,7 +29,7 @@ def main():
             print(api.get_category(*args[:2]))
 
         elif command == "GET_TOP_CATEGORY":
-            print(api.get_top_category(args[0]))
+            print(api.get_top_categories(args[0]))
 
         else:
             print("Error - invalid command")
